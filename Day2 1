@@ -1,0 +1,26 @@
+x=int(input("1つ目の数字を入力して下さい"))
+y=int(input("2つ目の数字を入力して下さい"))
+print("1は足し算です")
+print("2は引き算です")
+print("3は掛け算です")
+print("4は割り算です")
+A=input("どれを選択しますか？")
+def plus():
+  return x+y
+def minus():
+  return x-y
+def kakeru():
+  return x*y
+def waru():
+  return x/y
+
+if A=="1":
+  print(plus())
+if A=="2":
+ print( minus())
+if A=="3":
+  print(kakeru())
+if A=="4" and y!=0:
+  print(waru())
+if A=="4" and y==0:
+  print("ゼロ割エラーです")
